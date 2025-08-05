@@ -12,7 +12,7 @@ include $(srctree)/lib/vdso/Makefile
 ifeq ($(CONFIG_CC_IS_CLANG), y)
 
 CC_COMPAT ?= $(CC)
-CC_COMPAT += CC_COMPAT += --target=arm-linux-gnueabi
+CC_COMPAT += --target=arm-linux-gnueabi
 else
 CC_COMPAT ?= $(CROSS_COMPILE_COMPAT)gcc
 endif
